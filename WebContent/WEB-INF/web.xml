@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>appraisal</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<context-param>
+		<param-name>开发者</param-name>
+		<param-value>郭文峰</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>Beer</servlet-name>
+		<servlet-class>tc.bpb.manage.BeerSelect</servlet-class>
+		<init-param>
+			<param-name>Developer</param-name>
+			<param-value>Kane.Guo</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Beer</servlet-name>
+		<url-pattern>/SelectBeer.do</url-pattern>
+	</servlet-mapping>
+</web-app>
